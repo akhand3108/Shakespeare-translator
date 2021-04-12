@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-yellow: #3d348b;
+  --secondary-yellow: #885a89;
+  --black: #333333;
+  --blue: #f18701;
+  --dark-blue: #f7b801;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 17px;
+  }
+  header nav {
+    font-size: 2rem;
+  }
+}
+
+header {
+  text-align: center;
+  background-color: var(--primary-yellow);
+  color: var(--dark-blue);
+  padding: 20px;
+  font-size: 1.1rem;
+  min-height: 20vh;
+}
+
+header nav {
+  font-size: 4rem;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.flex-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main {
+  margin: 30px;
+  text-align: center;
+  min-height: 50vh;
+}
+
+#text-input {
+  flex-grow: 2;
+  flex-shrink: 0;
+  text-align: left;
+  min-width: 25%;
+  min-height: 25vh;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: large;
+  color: var(--blue);
+  word-wrap: normal;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+#button-translate {
+  background-color: var(--blue);
+  padding: 1rem 30px;
+  width: max-content;
+  margin: 20px auto;
+  font-size: large;
+  color: var(--primary-yellow);
+  border: none;
+}
+
+#button-clear {
+  background-color: white;
+  padding: 1rem 30px;
+  width: max-content;
+  margin: 20px auto;
+  font-size: large;
+  color: var(--dark-blue);
+  border: 1px solid var(--blue);
+}
+
+#text-output {
+  flex-shrink: 0;
+  text-align: left;
+  border: 1px solid gray;
+  padding: 20px;
+  min-height: 20vh;
+  min-width: 25%;
+  flex-grow: 2;
+  color: #985277;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .flex-main {
+    flex-direction: column;
+  }
+
+  .button-box {
+    flex-direction: row;
+  }
+}
+
+footer {
+  padding: 20px;
+  padding-top: 30px;
+  background-color: var(--primary-yellow);
+  min-height: 10vh;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.link-blue {
+  background-color: var(--blue);
+  padding: 0.5rem 0.5rem;
+  width: max-content;
+  font-size: small;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.author-line {
+  color: teal;
+}
+
+.author-line a {
+  color: white;
+  text-decoration: none;
+}
