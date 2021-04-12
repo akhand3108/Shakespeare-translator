@@ -58,7 +58,7 @@ header nav {
 main {
   margin: 30px;
   text-align: center;
-  min-height: 50vh;
+  min-height: 60vh;
 }
 
 #text-input {
@@ -127,9 +127,11 @@ main {
 
 footer {
   padding: 20px;
-  padding-top: 30px;
   background-color: var(--primary-yellow);
   min-height: 10vh;
+  padding: ;
+
+  bottom: 0;
 }
 
 .footer-flex {
