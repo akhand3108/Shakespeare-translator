@@ -5,11 +5,9 @@
 }
 
 :root {
-  --primary-yellow: #3d348b;
-  --secondary-yellow: #885a89;
-  --black: #333333;
-  --blue: #f18701;
-  --dark-blue: #f7b801;
+  --dark-blue: #012a4a;
+
+  --blue: #a9d6e5;
 }
 
 html {
@@ -31,8 +29,8 @@ body {
 
 header {
   text-align: center;
-  background-color: var(--primary-yellow);
-  color: var(--dark-blue);
+  background-color: var(--dark-blue);
+  color: var(--blue);
   padding: 20px;
   font-size: 1.1rem;
   min-height: 20vh;
@@ -62,7 +60,7 @@ main {
 }
 
 #text-input {
-  flex-grow: 2;
+  flex-grow: 1;
   flex-shrink: 0;
   text-align: left;
   min-width: 25%;
@@ -90,8 +88,15 @@ main {
   width: max-content;
   margin: 20px auto;
   font-size: large;
-  color: var(--primary-yellow);
+  color: var(--dark-blue);
   border: none;
+  transition: 0.2s all ease-in;
+}
+
+#button-translate:hover {
+  background-color: var(--dark-blue);
+  color: var(--blue);
+  border-radius: 2rem;
 }
 
 #button-clear {
@@ -102,17 +107,24 @@ main {
   font-size: large;
   color: var(--dark-blue);
   border: 1px solid var(--blue);
+  transition: 0.2s all ease-in;
+}
+#button-clear:hover {
+  background-color: gray;
+  color: var(--dark-blue);
+  border-radius: 3rem;
 }
 
 #text-output {
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   text-align: left;
   border: 1px solid gray;
   padding: 20px;
-  min-height: 20vh;
-  min-width: 25%;
-  flex-grow: 2;
+  /* min-height: 20vh; */
+  /* min-width: 25%; */
+  flex-grow: 1;
   color: #985277;
+  max-width: 90%;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
@@ -127,7 +139,7 @@ main {
 
 footer {
   padding: 20px;
-  background-color: var(--primary-yellow);
+  background-color: var(--dark-blue);
   min-height: 10vh;
   padding: ;
 
@@ -141,11 +153,11 @@ footer {
 }
 
 .link-blue {
-  background-color: var(--blue);
+  background-color: #fff;
   padding: 0.5rem 0.5rem;
   width: max-content;
   font-size: small;
-  color: white;
+  color: var(--dark-blue);
   border: none;
   border-radius: 25px;
   text-decoration: none;
